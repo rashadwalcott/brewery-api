@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 
 
   def profile
-render json: current_user, include: [:breweries]
+render json: current_user, include: [:breweries, :favorites]
 end
 
   # GET /users
